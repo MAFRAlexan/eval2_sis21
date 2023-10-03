@@ -47,7 +47,7 @@ class homeState extends State<home>{
                 color: Colors.green
             ),
             ListTile(
-              leading: Icon(Icons.account_box_outlined),
+              leading: const Icon(Icons.attach_money),
               title: Text('Acerca de nosotros'),
               onTap: (){
                 _onSelectItemDrawer(0);
@@ -55,7 +55,7 @@ class homeState extends State<home>{
               },
             ),
             ListTile(
-                leading: Icon(Icons.account_circle),
+                leading: const Icon(Icons.attach_money),
                 title: Text('Registrar producto'),
                 onTap: (){
                   _onSelectItemDrawer(1);

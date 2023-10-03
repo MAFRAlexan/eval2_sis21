@@ -33,9 +33,8 @@ class Registro extends StatelessWidget{
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.grey[200],
-                    prefixIcon: const ,
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                    prefixIcon: const Icon(Icons.key),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                     labelText: 'ID',
                     hintText: 'Ingrese el ID del producto'
                 ),
@@ -46,14 +45,8 @@ class Registro extends StatelessWidget{
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.grey[200],
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('img/productos.png',
-                        width: 5,
-                        height: 5,),
-                    ),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                    prefixIcon: const Icon(Icons.attach_money),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                     labelText: 'Nombre',
                     hintText: 'Ingrese el nombre del producto'
                 ),
@@ -64,9 +57,9 @@ class Registro extends StatelessWidget{
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.grey[200],
+
                     prefixIcon: const Icon(Icons.attach_money),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                     labelText: 'Precio',
                     hintText: 'Ingrese el precio del producto'
                 ),
@@ -77,15 +70,9 @@ class Registro extends StatelessWidget{
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.grey[200],
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('img/stock.png',
-                        width: 5,
-                        height: 5,),
-                    ),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                    labelText: 'Stock',
+                    prefixIcon: const Icon(Icons.attach_money),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+                    labelText: 'Cantidad',
                     hintText: 'Ingrese el stock del producto'
                 ),
               ),

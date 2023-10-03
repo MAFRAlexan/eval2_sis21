@@ -38,7 +38,7 @@ class _MyHomePageState extends State<Consulta> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Consultar Datos'),
+        title: Text('Consultar Productos'),
       ),
       body: FutureBuilder(
         future: getMensajes(),

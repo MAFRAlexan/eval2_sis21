@@ -11,7 +11,7 @@ class AcercaDe extends StatelessWidget{
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Image.asset('.jpeg',
+                  Image.asset('cañas.jpeg',
                     height: 150,
                     width: 150,),
                   const Text('Carlos Daniel Cañas Carrillo',
@@ -29,7 +29,7 @@ class AcercaDe extends StatelessWidget{
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Image.asset('.jpeg',
+                  Image.asset('manuel.jpeg',
                     height: 150,
                     width: 150,),
                   const Text('Manuel Alexander Flores Rivas',
