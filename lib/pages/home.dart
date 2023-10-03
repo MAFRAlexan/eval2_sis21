@@ -31,7 +31,7 @@ class homeState extends State<home>{
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.purple,
+                color: Colors.blue,
               ),
               child: Center(
                 child: Text(
@@ -44,7 +44,7 @@ class homeState extends State<home>{
               ),
             ),
             Divider(
-                color: Colors.red
+                color: Colors.green
             ),
             ListTile(
               leading: Icon(Icons.account_box_outlined),
@@ -56,7 +56,7 @@ class homeState extends State<home>{
             ),
             ListTile(
                 leading: Icon(Icons.account_circle),
-                title: Text('Registrar'),
+                title: Text('Registrar producto'),
                 onTap: (){
                   _onSelectItemDrawer(1);
 
@@ -71,7 +71,7 @@ class homeState extends State<home>{
                 }
             ),
             Divider(
-                color: Colors.red
+                color: Colors.green
             ),
           ],
         ),

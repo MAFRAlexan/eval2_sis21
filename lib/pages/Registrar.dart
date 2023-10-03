@@ -34,12 +34,7 @@ class Registro extends StatelessWidget{
                 decoration: InputDecoration(
                     filled: true,
                     fillColor: Colors.grey[200],
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('img/insignia.png',
-                        width: 5,
-                        height: 5,),
-                    ),
+                    prefixIcon: const ,
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                     labelText: 'ID',
                     hintText: 'Ingrese el ID del producto'
