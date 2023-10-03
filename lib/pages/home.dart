@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'AcercaDe.dart';
+import 'Consulta.dart';
+import 'Registrar.dart';
 
 class home extends StatefulWidget{
   @override
@@ -9,7 +11,13 @@ class home extends StatefulWidget{
 class homeState extends State<home>{
   int ItemDrawer = 0;
 
-
+  _getDrawerItem(int position){
+    switch(position){
+      case 0: return AcercaDe();
+      case 1: return Registro();
+      case 2: return Consulta();
+    }
+  }
 
   void _onSelectItemDrawer( int pos){
     Navigator.pop(context);
@@ -31,7 +39,7 @@ class homeState extends State<home>{
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.purple,
               ),
               child: Center(
                 child: Text(
@@ -44,10 +52,10 @@ class homeState extends State<home>{
               ),
             ),
             Divider(
-                color: Colors.green
+                color: Colors.red
             ),
             ListTile(
-              leading: const Icon(Icons.attach_money),
+              leading: Icon(Icons.account_box_outlined),
               title: Text('Acerca de nosotros'),
               onTap: (){
                 _onSelectItemDrawer(0);
@@ -55,8 +63,8 @@ class homeState extends State<home>{
               },
             ),
             ListTile(
-                leading: const Icon(Icons.attach_money),
-                title: Text('Registrar producto'),
+                leading: Icon(Icons.account_circle),
+                title: Text('Registrar'),
                 onTap: (){
                   _onSelectItemDrawer(1);
 
@@ -71,13 +79,13 @@ class homeState extends State<home>{
                 }
             ),
             Divider(
-                color: Colors.green
+                color: Colors.red
             ),
           ],
         ),
       ),
 
-
+      body: _getDrawerItem(ItemDrawer),
     );
   }
 }
