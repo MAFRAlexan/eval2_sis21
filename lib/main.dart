@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'basedatos',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 0, 217, 255)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(
+            255, 6, 40, 239)),
         useMaterial3: true,
       ),
       home: home(),
